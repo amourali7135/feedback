@@ -7,6 +7,7 @@ class AddFieldsToUsers < ActiveRecord::Migration[7.0]
     add_column :users, :job_title, :string
     add_column :users, :management, :boolean
     add_column :users, :employee, :boolean
+    add_column :users, :manager_id, :integer
     add_column :users, :hr, :boolean
   end
 end
